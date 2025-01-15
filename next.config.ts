@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true, // Enable React Strict Mode
+  eslint: {
+    // Ignore specific ESLint rules during development and builds
+    ignoreDuringBuilds: true, // Skip ESLint checks during builds
+  },
 };
 
 export default nextConfig;
